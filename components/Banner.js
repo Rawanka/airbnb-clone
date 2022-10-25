@@ -11,13 +11,13 @@ function Banner() {
       />
       <div className='absolute top-1/2 w-full text-center  '>
         <p className='text-sm sm:text-lg font-bold text-green-900'>
-don't know where to go? start your journy here
-      </p>
-      <button className='text-green-600 bg-white px-10 py-4
+          don't know where to go? start your journy here
+        </p>
+        <button className='text-green-600 bg-white px-10 py-4
       shadow-md rounded-full my-3 hover:shadow-xl active:scale-90
       transition duration-200
       '>
-        i'm flexbale</button>
+          i'm flexbale</button>
       </div>
     </div>
   )

@@ -8,7 +8,13 @@ UserIcon,
 MenuIcon,
  } from '@heroicons/react/solid'
 
+ import { useState } from 'react'
+
 export default function Header() {
+
+const [searchInput, setSearchInput] = useState('');
+
+
   return (
     <header className='sticky top-0 z-50 grid grid-cols-3
     bg-white shadow-md p-5 md:px-10'>
@@ -28,7 +34,10 @@ export default function Header() {
       rounded-full py-2 md:shadow-sm
       '>
 
-        <input className='flex-grow pl-5 bg-transparent 
+        <input 
+        value={searchInput}
+        onChange={(e) =>setSearchInput(e.target.value)}
+        className='flex-grow pl-5 bg-transparent 
         outline-none text-gray-600 placeholder-gray-400
         ' type="text" placeholder='start your journy'
         />
